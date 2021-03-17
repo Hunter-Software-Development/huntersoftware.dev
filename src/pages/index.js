@@ -12,7 +12,7 @@ const IndexPage = () => {
                 <div className={"row"} style={height100}>
                     <div className={"col align-self-center"}>
                         <h1>Hunter Software Development</h1>
-                        <h4>Boutique Web Development in Greenville, South Carolina 📍</h4>
+                        <h4>Boutique Web Development in Greenville, South Carolina <span role="img" aria-label="pin">📍</span></h4>
                         <p>Coming soon...</p>
                     </div>
                 </div>
