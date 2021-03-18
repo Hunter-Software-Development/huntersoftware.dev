@@ -11,7 +11,7 @@ const IndexPage = () => {
         <div className={"container"} style={height100}>
             <div className={"row"} style={height100}>
                 <div className={"col align-self-center"}>
-                    <FadeIn delay={0} duration={500}>
+                    <FadeIn delay={100} duration={1000}>
                         <h1>Hunter Software Development</h1>
                         <h4>
                             Boutique Web Development in Greenville, South Carolina
