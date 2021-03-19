@@ -19,7 +19,7 @@ const IndexPage = () => {
                         <FadeIn delay={100} duration={1000}>
                             <h1>Hunter Software Development</h1>
                             <h4>
-                                Boutique Web Development in Greenville, South Carolina
+                                A Boutique Web Development Agency in Greenville, South Carolina
                                 <span role="img" aria-label="pin">
                                     📍
                                 </span>
