@@ -1,20 +1,17 @@
 import * as React from "react";
 import FadeIn from "../components/fadeIn";
-import { Helmet } from "react-helmet";
+import Head from "../components/Head";
+
 
 const height100 = {
     height: "100%",
 };
 
-console.log(process.env.GOOGLE_ANALYTICS_TRACKING_ID);
-console.log(process.env.NODE_ENV);
 // markup
 const IndexPage = () => {
     return (
         <>
-            <Helmet>
-                <title>Hunter Software Development</title>
-            </Helmet>
+            <Head />
             <div className={"container"} style={height100}>
                 <div className={"row"} style={height100}>
                     <div className={"col align-self-center"}>
