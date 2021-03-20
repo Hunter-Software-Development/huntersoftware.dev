@@ -6,6 +6,8 @@ const height100 = {
     height: "100%",
 };
 
+console.log(process.env.GOOGLE_ANALYTICS_TRACKING_ID);
+console.log(process.env.NODE_ENV);
 // markup
 const IndexPage = () => {
     return (

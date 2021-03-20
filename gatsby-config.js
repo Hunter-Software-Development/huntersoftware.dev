@@ -1,3 +1,7 @@
+require("dotenv").config({
+    path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
     siteMetadata: {
         title: "huntersoftwaredevelopment",
@@ -17,5 +21,14 @@ module.exports = {
         },
         `gatsby-plugin-offline`,
         `gatsby-plugin-react-helmet`,
+        {
+            resolve: `gatsby-plugin-google-gtag`,
+            options: {
+                // You can add multiple tracking ids and a pageview event will be fired for all of them.
+                trackingIds: [
+                    process.env.GOOGLE_ANALYTICS_TRACKING_ID, // Google Analytics / GA
+                ],
+            },
+        },
     ],
 };
