@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
     siteMetadata: {
         title: "huntersoftwaredevelopment",
-        siteUrl: "https://huntersoftware.dev"
+        siteUrl: "https://huntersoftware.dev",
     },
     plugins: [
         {
@@ -33,5 +33,8 @@ module.exports = {
         `gatsby-plugin-advanced-sitemap`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-robots-txt`,
+        `gatsby-plugin-image`,
+        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
     ],
 };
