@@ -3,6 +3,7 @@ import * as React from "react";
 import FadeIn from "../components/fadeIn";
 import Head from "../components/Head";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const height100 = {
     height: "100%",
@@ -13,6 +14,7 @@ const IndexPage = () => {
     return (
         <>
             <Head />
+            <Header />
             <main style={height100}>
                 <div className={"container"} style={height100}>
                     <div className={"row"} style={height100}>
