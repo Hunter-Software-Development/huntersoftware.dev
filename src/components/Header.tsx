@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="container">
                     <a className="navbar-brand" href="#">
                         <img src={logo} alt="" width="24" height="24" style={{ verticalAlign: "middle" }} />
-                        <span className="mx-3" style={{ verticalAlign: "middle" }}>Hunter Software Development</span>
+                        <span className="mx-3" style={{ verticalAlign: "middle" }}>Hunter Software</span>
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                         <span className="navbar-toggler-icon"></span>
