@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const Footer = () => {
     return (
-        <footer className="footer py-2 bg-light fixed-bottom">
+        <footer className="footer py-2 bg-light fixed-bottom border-top">
             <div className="container">
                 <div className={"row"}>
                     <div className={"col-xxl text-center"}>

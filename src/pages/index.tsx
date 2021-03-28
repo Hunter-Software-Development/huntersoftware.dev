@@ -1,39 +1,32 @@
 import * as React from "react";
+import { Link, graphql } from "gatsby";
+
 
 import FadeIn from "../components/fadeIn";
 import Head from "../components/Head";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-
-const height100 = {
-    height: "100%",
-};
+import Layout from "../components/layout";
 
 // markup
-const IndexPage = () => {
+const IndexPage = ({  location }) => {
+    const siteTitle =  `Title`;
+
     return (
         <>
             <Head />
-            <Header />
-            <main style={height100}>
-                <div className={"container"} style={height100}>
-                    <div className={"row"} style={height100}>
-                        <div className={"col align-self-center"}>
-                            <FadeIn delay={100} duration={1000}>
-                                <h1>Hunter Software Development</h1>
-                                <h4>
-                                    A Boutique Web Development Agency in Greenville, South Carolina
-                                    <span role="img" aria-label="pin">
-                                        📍
-                                    </span>
-                                </h4>
-                                <p>Coming soon...</p>
-                            </FadeIn>
-                        </div>
-                    </div>
-                </div>
-            </main>
-            <Footer />
+            <Layout location={location} title={siteTitle}>
+                <FadeIn delay={100} duration={1000}>
+                    <h1>Hunter Software Development</h1>
+                    <h4>
+                        A Boutique Web Development Agency in Greenville, South Carolina
+                        <span role="img" aria-label="pin">
+                            📍
+                        </span>
+                    </h4>
+                    <p>Coming soon...</p>
+                </FadeIn>
+            </Layout>
         </>
     );
 };
