@@ -1,33 +1,40 @@
 import * as React from "react";
+import { Link } from "gatsby";
 
 import logo from "../images/icon.png";
 
 const Footer = () => {
     return (
-        <header>
-            <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top border-bottom shadow-sm">
+        <header className="sticky-top">
+            <nav className="navbar navbar-expand-md navbar-light bg-light border-bottom shadow-sm">
                 <div className="container">
                     <a className="navbar-brand" href="#">
                         <img src={logo} alt="" height="32" style={{ verticalAlign: "middle" }} />
-                        <span className="mx-3" style={{ verticalAlign: "middle" }}>Hunter Software</span>
+                        <span className="mx-3" style={{ verticalAlign: "middle" }}>
+                            Hunter Software
+                        </span>
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="navbar collapse navbar-collapse justify-content-end" id="navbar">
                         <div className="navbar-nav">
-                            <a className="nav-link active" aria-current="page" href="#">
+                            <Link to="/" itemProp="url" className="nav-link" activeClassName="active">
                                 Home
-                            </a>
-                            <a className="nav-link disabled" href="#">
+                            </Link>
+                            <Link to="/blog" itemProp="url" className="nav-link" activeClassName="active">
+                                Blog
+                            </Link>
+                            <Link to="/about" itemProp="url" className="nav-link disabled" activeClassName="active">
                                 About
-                            </a>
-                            <a className="nav-link disabled" href="#">
+                            </Link>
+                            <Link to="/pricing" itemProp="url" className="nav-link disabled" activeClassName="active">
                                 Pricing
-                            </a>
-                            <a className="nav-link disabled" href="#">
+                            </Link>
+                            <Link to="/why" itemProp="url" className="nav-link disabled" activeClassName="active">
                                 Why
-                            </a>
+                            </Link>
+
                         </div>
                     </div>
                 </div>
