@@ -15,7 +15,7 @@ const BlogPostTemplate = ({ data, location }) => {
             <article className="blog-post" itemScope itemType="http://schema.org/Article">
                 <header>
                     <h1 itemProp="headline">{post.frontmatter.title}</h1>
-                    <p>{post.frontmatter.date}</p>
+                    <small>{post.frontmatter.date}</small>
                 </header>
                 <section dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" />
                 <hr />

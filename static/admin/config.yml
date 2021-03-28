@@ -1,9 +1,13 @@
 backend:
   name: git-gateway
-  branch: netlify-cms
+  branch: main
 
+publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
+site_url: https://huntersoftware.dev
+display_url: https://huntersoftware.dev
+
 
 collections:
   - name: 'blog'

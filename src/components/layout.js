@@ -14,7 +14,7 @@ const Layout = ({ location, title, children }) => {
             <main style={height100}>
                 <div className={"container"} style={height100}>
                     <div className={"row"} style={height100}>
-                        <div className={"col align-self-center"}>{children}</div>
+                        <div className={"col align-self-center py-5 "}>{children}</div>
                     </div>
                 </div>
             </main>
