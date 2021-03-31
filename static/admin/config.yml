@@ -17,7 +17,7 @@ display_url: https://huntersoftware.dev
 collections:
     - name: "blog"
       label: "Blog"
-      folder: "content/blog"
+      folder: "src/content/blog"
       create: true
       slug: "index"
       media_folder: ""
@@ -33,7 +33,7 @@ collections:
 
     - name: "pages"
       label: "Pages"
-      folder: "content/pages"
+      folder: "src/content/pages"
       create: true
       slug: "index"
       media_folder: ""
