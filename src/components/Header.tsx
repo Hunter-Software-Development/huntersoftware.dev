@@ -8,12 +8,12 @@ const Footer = () => {
         <header className="sticky-top">
             <nav className="navbar navbar-expand-md navbar-light bg-light border-bottom shadow-sm">
                 <div className="container">
-                    <a className="navbar-brand" href="#">
+                    <Link to="/" className="navbar-brand">
                         <img src={logo} alt="" height="32" style={{ verticalAlign: "middle" }} />
                         <span className="mx-3" style={{ verticalAlign: "middle" }}>
                             Hunter Software
                         </span>
-                    </a>
+                    </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -34,7 +34,6 @@ const Footer = () => {
                             <Link to="/why" itemProp="url" className="nav-link disabled" activeClassName="active">
                                 Why
                             </Link>
-
                         </div>
                     </div>
                 </div>

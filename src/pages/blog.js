@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Seo from "../components/Seo";
 
 const BlogIndex = ({ data, location }) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`;
@@ -11,7 +11,7 @@ const BlogIndex = ({ data, location }) => {
     if (posts.length === 0) {
         return (
             <Layout location={location} title={siteTitle}>
-                <SEO title="Blog" />
+                <Seo title="Blog" />
                 <p>No blog posts found.</p>
             </Layout>
         );
@@ -19,7 +19,7 @@ const BlogIndex = ({ data, location }) => {
 
     return (
         <Layout location={location} title={siteTitle}>
-            <SEO title="Blog" />
+            <Seo title="Blog" />
             <ol style={{ listStyle: `none` }}>
                 {posts.map((post) => {
                     const title = post.frontmatter.title || post.fields.slug;

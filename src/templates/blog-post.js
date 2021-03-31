@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Seo from "../components/Seo";
 
 const BlogPostTemplate = ({ data, location }) => {
     const post = data.markdownRemark;
@@ -11,7 +11,7 @@ const BlogPostTemplate = ({ data, location }) => {
 
     return (
         <Layout location={location} title={siteTitle}>
-            <SEO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
+            <Seo title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
             <article className="blog-post" itemScope itemType="http://schema.org/Article">
                 <header>
                     <h1 itemProp="headline">{post.frontmatter.title}</h1>
