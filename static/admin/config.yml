@@ -1,6 +1,6 @@
 backend:
     name: git-gateway
-    branch: issue6
+    branch: main
     commit_messages:
         create: "Create {{collection}} “{{slug}}” 🏗"
         update: "Update {{collection}} “{{slug}}” 🚼"
