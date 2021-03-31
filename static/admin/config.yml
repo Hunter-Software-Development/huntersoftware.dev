@@ -1,6 +1,14 @@
 backend:
-  name: git-gateway
-  branch: main
+    name: git-gateway
+    branch: issue6
+    commit_messages:
+        create: "Create {{collection}} “{{slug}}” 🏗"
+        update: "Update {{collection}} “{{slug}}” 🚼"
+        delete: "Delete {{collection}} “{{slug}}” 🚫"
+        uploadMedia: "Upload “{{path}}” 🏗"
+        deleteMedia: "Delete “{{path}}” 🚫"
+
+local_backend: true
 
 publish_mode: editorial_workflow
 media_folder: static/img
@@ -8,20 +16,38 @@ public_folder: /img
 site_url: https://huntersoftware.dev
 display_url: https://huntersoftware.dev
 
-
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
-    create: true
-    slug: 'index'
-    media_folder: ''
-    public_folder: ''
-    path: '{{title}}/index'
-    editor:
-      preview: true
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+    - name: "blog"
+      label: "Blog"
+      folder: "content/blog"
+      create: true
+      slug: "index"
+      media_folder: ""
+      public_folder: ""
+      path: "{{title}}/index"
+      editor:
+          preview: true
+      fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Tags", name: "tags", widget: "list" }
+
+    - name: "pages"
+      label: "Pages"
+      files:
+          - file: "content/pages/index.md"
+            label: "Landing Page"
+            name: "index"
+            fields:
+                - { label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page" }
+                - { label: Title, name: title, widget: string }
+                - { label: Image, name: image, widget: image }
+                - { label: Heading, name: heading, widget: string }
+                - { label: Subheading, name: subheading, widget: string }
+                - { label: Mainpitch, name: mainpitch, widget: object, fields: [{ label: Title, name: title, widget: string }, { label: Description, name: description, widget: text }] }
+                - { label: Description, name: description, widget: string }
+                - { label: Intro, name: intro, widget: object, fields: [{ label: Heading, name: heading, widget: string }, { label: Description, name: description, widget: text }, { label: Blurbs, name: blurbs, widget: list, fields: [{ label: Image, name: image, widget: image }, { label: Text, name: text, widget: text }] }] }
+                - { label: Main, name: main, widget: object, fields: [{ label: Heading, name: heading, widget: string }, { label: Description, name: description, widget: text }, { label: Image1, name: image1, widget: object, fields: [{ label: Image, name: image, widget: image }, { label: Alt, name: alt, widget: string }] }, { label: Image2, name: image2, widget: object, fields: [{ label: Image, name: image, widget: image }, { label: Alt, name: alt, widget: string }] }, { label: Image3, name: image3, widget: object, fields: [{ label: Image, name: image, widget: image }, { label: Alt, name: alt, widget: string }] }] }
