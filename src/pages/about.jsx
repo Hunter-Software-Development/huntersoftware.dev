@@ -1,10 +1,12 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
+import { StaticImage } from "gatsby-plugin-image";
+
+
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 
-import aboutHero from "../images/aboutHero.jpg";
 
 // markup
 const IndexPage = ({ location }) => {
@@ -40,17 +42,14 @@ const IndexPage = ({ location }) => {
                         .
                     </p>
                 </div>
-                <div
-                    className="col-lg align-self-center text-light rounded text-end"
-                    style={{
-                        height: "500px",
-                        backgroundImage: `url(${aboutHero})`,
-                        backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                        backgroundPosition: "center center",
-                    }}
-                >
-                    <h1>About</h1>
+
+                <div className="col-lg text-white text-end px-0">
+                    <div className=" card bg-light">
+                        <StaticImage src={"../images/aboutHero.jpg"} class="card-img" alt="About" />
+                        <div className="card-img-overlay">
+                            <h1 className="card-title">About</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
         </Layout>
