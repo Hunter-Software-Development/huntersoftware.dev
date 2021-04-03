@@ -28,7 +28,7 @@ const Footer = () => {
                             <Link to="/about" itemProp="url" className="nav-link" activeClassName="active">
                                 About
                             </Link>
-                            <Link to="/pricing" itemProp="url" className="nav-link disabled" activeClassName="active">
+                            <Link to="#" itemProp="url" className="nav-link disabled" activeClassName="active">
                                 Pricing
                             </Link>
                             <Link to="/why" itemProp="url" className="nav-link" activeClassName="active">
