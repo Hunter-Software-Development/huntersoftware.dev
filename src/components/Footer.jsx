@@ -1,6 +1,7 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
+import linkedinLogo from "../images/socialIcons/linkedin.png";
 
 const Footer = () => {
     return (
@@ -23,7 +24,7 @@ const Footer = () => {
                     </div>
                     <div className={"col-xxl text-center"}>
                         <a href={"https://www.linkedin.com/company/hunter-software-development"} target={"_blank"} rel={"noreferrer"}>
-                            <StaticImage src={"../images/socialIcons/linkedin.png"} alt={"linkedin"} width={16} height={16} style={{ verticalAlign: "middle" }} />
+                            <img src={linkedinLogo} alt={"linkedin"} width={16} height={16} style={{ verticalAlign: "middle" }} />
                         </a>
                     </div>
                 </div>
