@@ -5,7 +5,7 @@ import Seo from "../components/Seo";
 
 // markup
 const IndexPage = ({ location }) => {
-    const siteTitle = "Home";
+    const siteTitle = "Why";
 
     return (
         <Layout location={location} title={siteTitle}>

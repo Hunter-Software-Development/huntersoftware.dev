@@ -2,6 +2,7 @@ import * as React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
+import logo from "../images/icon.png";
 
 const Footer = () => {
     return (
@@ -9,7 +10,7 @@ const Footer = () => {
             <nav className="navbar navbar-expand-md navbar-light bg-light border-bottom shadow-sm">
                 <div className="container">
                     <Link to="/" className="navbar-brand">
-                        <StaticImage src={"../images/icon.png"} alt="" height="32" style={{ verticalAlign: "middle" }} />
+                        <img src={logo} alt="Logo" height="32" width="32" style={{ verticalAlign: "middle" }} />
                         <span className="mx-3" style={{ verticalAlign: "middle" }}>
                             Hunter Software
                         </span>

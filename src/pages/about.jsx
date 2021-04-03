@@ -3,14 +3,12 @@ import { Link } from "gatsby";
 
 import { StaticImage } from "gatsby-plugin-image";
 
-
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 
-
 // markup
 const IndexPage = ({ location }) => {
-    const siteTitle = "Home";
+    const siteTitle = "About";
 
     return (
         <Layout location={location} title={siteTitle}>
@@ -45,7 +43,7 @@ const IndexPage = ({ location }) => {
 
                 <div className="col-lg text-white text-end px-0">
                     <div className=" card bg-light">
-                        <StaticImage src={"../images/aboutHero.jpg"} class="card-img" alt="About" />
+                        <StaticImage src={"../images/aboutHero.jpg"} class="card-img" alt="About" placeholder="blurred" />
                         <div className="card-img-overlay">
                             <h1 className="card-title">About</h1>
                         </div>
