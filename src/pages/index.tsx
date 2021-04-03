@@ -14,12 +14,12 @@ const IndexPage = ({ location }) => {
             <Seo title={siteTitle} />
             <FadeIn delay={100} duration={1000}>
                 <h1>Hunter Software Development</h1>
-                <h4>
+                <h2 style={{fontSize: "24px"}}>
                     A Boutique Web Development Agency in Greenville, South Carolina
                     <span role="img" aria-label="pin">
                         📍
                     </span>
-                </h4>
+                </h2>
                 <p>Coming soon...</p>
             </FadeIn>
         </Layout>
