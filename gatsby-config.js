@@ -78,6 +78,7 @@ module.exports = {
                     }
                   `,
                         output: "/rss.xml",
+                        title: "Hunter Software Development RSS Feed",
                     },
                 ],
             },
@@ -119,7 +120,7 @@ module.exports = {
             },
         },
         `gatsby-plugin-offline`,
-        `gatsby-plugin-advanced-sitemap`,
+        `gatsby-plugin-sitemap`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-robots-txt`,
         `gatsby-plugin-image`,
