@@ -11,4 +11,4 @@ Uptime Kuma isn't the most feature-rich solution out there, but what it does, it
 
 The setup for Uptime Kuma was pretty straightforward.  Using Unraid's [Community Apps](https://unraid.net/community/apps), I was able to use the Uptime Kuma Docker Image with minimal setup.  Similarly, adding + configuring monitors was a breeze.\
 \
-All-in-all, you can view the finished product here: [status.huntersoftware.dev](status.huntersoftware.dev)
+All-in-all, you can view the finished product here: [status.huntersoftware.dev](https://status.huntersoftware.dev/status)
