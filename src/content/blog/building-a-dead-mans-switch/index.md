@@ -9,7 +9,7 @@ The project started with a **[React](https://reactjs.org/)** front-end.  As I wa
 
 For the back-end I decided to use **[NestJS](https://nestjs.com/)** - it was another project that I hadn't used before but had heard good things about.  I was (and still am) interested in moving towards a more service-oriented architecture after working exclusively in monoliths and Nest seemed to be the most feature-rich Node framework that was built with services in mind.  I really enjoyed using Nest and despite some idiosyncracies (namely how the usage of decorators) - I think I'll continue using it for projects in the future.  
 
-I decided to use** [GraphQL](https://graphql.org/)** instead of REST in part because Nest supported it so well - but also because it was a service that I had never set up from the provider side.  It was definitely overkill for this simple project - and there's just some simplicity to REST that I love - but I do intend on continuing to use it in the future when I can.
+I decided to use **[GraphQL](https://graphql.org/)** instead of REST in part because Nest supported it so well - but also because it was a service that I had never set up from the provider side.  It was definitely overkill for this simple project - and there's just some simplicity to REST that I love - but I do intend on continuing to use it in the future when I can.
 
 The one design decision I made for simplicity's sake was to use a **[MongoDB](https://www.mongodb.com/)**.  
 
