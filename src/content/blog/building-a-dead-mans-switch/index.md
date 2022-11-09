@@ -17,4 +17,8 @@ I initially was building this project with separate front-end and back-end repos
 
 Finally, I wanted to use this project to extend some of my dev-ops knowledge, so I used **[Docker](https://www.docker.com/)** to containerize the project and ultimately used **[Kubernetes](https://kubernetes.io/)** (with **[Helm](https://helm.sh/)**'s help) to orchestrate.  I ended up using **[Okteto](https://www.okteto.com/)** for PR builds (and because they have a free tier) and am super happy with their service.
 
+As for the future, I'm not sure what if anything I'll end up doing with this project.  I intended to get it to a production environment and use it for at least personal use (and allow folks to store small amounts of data), but more I thought about it, the more terrified of maintaining it I became.  This is a project that (at least theoretically) lasts for lifetimes.  And it's a project that would store potentially incredibly important data.
+
+While perhaps some day I may have the capacity to commit the rest of my life to maintaining a project, that day is not today, so for now this project will live as it is.
+
 Thank you for making it this far.  You can view the project [here](https://dms.huntersoftware.dev).
